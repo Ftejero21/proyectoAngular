@@ -1,0 +1,50 @@
+<div class="conteiner">
+  <div class="filtro ">
+    <div class="titulo-filtro">
+      <h1>Filtro</h1>
+    </div>
+    <div class="categorias" >
+        <button (click) ="mostrarPeliculasComedia()">Comedia</button>
+        <button (click) ="mostrarPeliculasDrama()">Drama</button>
+        <button (click) = "mostrarPeliculasTeatro()">Teatro</button>
+        <button (click) ="mostrarPeliculasNinos()">Niños</button>
+    </div>
+    <div class="categorias2">
+      <button>Mas Populares</button>
+      <button>Mayor Puntuacion</button>
+    </div>
+  </div>
+  <div class="conteiner-peliculas">
+    <div class="titulo-conteiner-peliculas">
+      <h3>Cantidad de Peliculas: {{cantidad}}</h3>
+      <h3>{{titulo}}</h3>
+    </div>
+      <div class="conteiner-peliculas2">
+
+        <div class="card"  *ngFor="let pelicula of Peliculas">
+          <img src="{{imagen + pelicula.poster_path}}" alt="">
+
+
+          <div class="fecha">
+            <p>{{pelicula.release_date}}</p>
+          </div>
+          <div class="card-container" >
+              <button (click)="cogerOverview(pelicula.overview)" >Ver Mas</button>
+              <button id="heart" (click)="guardarPelicula('peliculas2',pelicula)"><i id="heart2" class="bi bi-heart-fill"></i></button>
+
+            </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="botones">
+        <button (click)="atras()">Atras</button>
+        <h3>{{pagina}}</h3>
+        <button (click)="adelante()">Adelante</button>
+
+      </div>
+  </div>
+
+</div>
