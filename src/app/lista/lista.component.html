@@ -1,0 +1,21 @@
+<div class="conteiner-peliculas2">
+
+  <div class="info" *ngIf="lista.length <= 0">
+    <h1>No hay peliculas Guardadas</h1>
+  </div>
+
+  <div class="card" *ngFor="let pelicula of lista">
+    <img src="{{imagen + pelicula.poster_path}}" alt="">
+
+
+    <div class="fecha">
+      <p>{{pelicula.release_date}}</p>
+    </div>
+    <div class="card-container">
+      <button (click)="eliminarPelicula(pelicula.id)">Eliminar</button>
+     </div>
+
+  </div>
+
+
+</div>

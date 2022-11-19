@@ -5,7 +5,7 @@
   height: 200vh;
   background-image: url('https://as.com/meristation/imagenes/2021/07/02/reportajes/1625238771_202608_1625238808_noticia_normal.jpg');
   background-size: cover;
-  background-image: no-repeat;
+  background-image: repeat;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,12 +69,12 @@
 
 .conteiner-peliculas{
   width: 60%;
-  height: 90%;
-  margin-top: 25px;
+  height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+
+  flex-wrap: wrap;
   margin-bottom: 15px;
 }
 

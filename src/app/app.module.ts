@@ -7,6 +7,7 @@ import { HeaderComponentComponent } from './Header/header-component/header-compo
 import {HttpClientModule} from '@angular/common/http';
 import { PeliculasComponent } from './Peliculas/peliculas/peliculas.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ListaComponent } from './lista/lista.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     HeaderComponentComponent,
 
     PeliculasComponent,
-     NotfoundComponent
+     NotfoundComponent,
+     ListaComponent
   ],
   imports: [
     BrowserModule,

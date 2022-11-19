@@ -1,0 +1,64 @@
+.conteiner-peliculas2{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content:flex-start;
+  align-items:center ;
+  flex-wrap: wrap;
+
+}
+
+.card{
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.card-container{
+
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+
+  transform: translateX(-250px);
+  transition: 0.3s;
+}
+
+.card-container button{
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+  border: 1px solid white;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.card:hover .card-container{
+  transform: translateX(0px);
+}
